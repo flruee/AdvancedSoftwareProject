@@ -1,0 +1,434 @@
+*   e57498e (HEAD -> Development, origin/Development) Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\  
+| * a8de7d6 Update README.md
+* | 228d2d5 removed main from doc
+|/  
+* 8199101 sphinx docs finalised
+*   6be6565 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\  
+| *   46bfe19 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+| |\  
+| | * 4c85739 Update README.md
+| * | 6a8bc5d fixed comparebox
+| |/  
+* | 08807a0 new docs sphinx
+* | 66f1fad Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\| 
+| * 950b7d3 added options
+* | 53b1196 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\| 
+| * 567bc7f added optionsfile to change restAPIURL
+* | 2d58a5c more stuff
+* | 9002602 docstrings numpy style
+|/  
+* f20a7bf Update README.md
+* 94381c0 Update README.md
+* 4730de3 Update README.md
+* a16c30d Update README.md
+* 8d769bb Update README.md
+* c3cb958 Update README.md
+* 5f79987 Update README.md
+* 7c633e5 Update README.md
+* f6be79b form layout final update
+* 80593f9 fixed minor travis bug
+*   c97666a Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\  
+| * b9f03b2 Update README.md
+| * 0e018f1 Update README.md
+| * 3657089 Update README.md
+* | 297a782 changed ENV variables in docker-compose
+|/  
+*   d78f635 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\  
+| * bd6a663 Update README.md
+| * 09945ce Update README.md
+| * 7495811 Update README.md
+| * 61f8376 Update README.md
+| * 31df82e Update README.md
+| * 1b1ed8a Update README.md
+| * e1cd20c Update README.md
+| * 731ccce Update README.md
+* | 5023e5c modified travis
+|/  
+*   aa9f064 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\  
+| * 66c56d6 Update README.md
+| * 0e37333 Create README.md
+| * 0e604d4 Create README.md
+* | 3e93121 modified documentation
+|/  
+* 6fcc010 Delete pyvenv.cfg
+*   298f5da Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\  
+| * b9a017a removed unnecessary lines
+| * 4013474 Update README.md
+| * 59cc954 Create README.md
+| * e0d9995 Delete .travis.yml
+| * f94cca9 Update README.md
+| * 96de455 Delete requirements.txt
+* | 31cf9e5 moved bg_map to icons
+|/  
+*   a14b83d Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\  
+| * 441d8bf removed todo's and prints
+| *   e86fd4a Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+| |\  
+| * | e677840 renaming because build failed lol
+* | | b122c26 removed unnecessary code from rest_api
+| |/  
+|/|   
+* | b8a826e renamed data folder
+* | ccefc3b Update README.md
+|/  
+*   84d2851 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\  
+| * 5a7d0a6 Update README.md
+| * 6ff5aa5 fixed guest_filter
+| * 5501c27 added Dockerfile, inplemented manual price filter
+* | ba53ef8 delete docs / add listing data
+|/  
+* 7b070f8 deleted mergestuff and added inits
+*   2e72143 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\  
+| *   87af99d price slider working on
+| |\  
+| * | 951c9e4 form- price slider with input working on
+| * |   55e2be9 .
+| |\ \  
+| * | | 70b49d5 .
+* | | | 589f016 added dockerfile for app
+| |_|/  
+|/| |   
+* | | 01180d9 removed Lib and share
+* | | 857e629 removed Scripts
+* | | ec911fd if marker is selected it will now turn blue
+* | | 03ded8f added blue Marker for wishlist select
+| |/  
+|/|   
+* | c5f5c59 connected price filter
+* | d968996 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\| 
+| *   360912c form update & marker added
+| |\  
+| * | 29f54ee form - guest ready & added marker icon
+* | | 75b968e connected all form filters except price
+| |/  
+|/|   
+* |   1e034ec Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\ \  
+| * | 67d4275 init back just incase
+| * | dda0ce0 springclean and pep8 style refactoring code
+| * | d29c9ae Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+| |\| 
+| * | 37dbc72 make code beautiful again
+* | | 892b421 connected neighbourhood and age to filters
+| |/  
+|/|   
+* | 0cec4ea Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\| 
+| * 2576fce spring clean
+| * cff14c6 minor cleanup
+| * 0cf5935 restApiConnection now correctly uses the IN operator
+| *   34d7e1c Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+| |\  
+| | * f84ce50 added fancy loc func to comparescreen
+| | * 72cf8ea comments
+| | *   6950c87 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+| | |\  
+| | * \   300786f Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+| | |\ \  
+| | * | | 56b27cd just wanna pull
+| * | | | 25d3b2f dockerized new rest_api version
+| | |_|/  
+| |/| |   
+| * | | 619721b fixed popup with no reviews bug
+| | |/  
+| |/|   
+| * | 63a72a7 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+| |\| 
+| | *   6d8e9dd Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+| | |\  
+| | * | ebc8ed3 pls debög
+| * | | 1a03470 modified travis, changed review api functionality
+| | |/  
+| |/|   
+| * | 93c4c59 fixed tests
+| * | 1b2feef Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+| |\| 
+| | * 48bef17 comparescreen öpdates
+| | *   6ae6e0f Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+| | |\  
+| | * | 9770665 changes from Flo via Zoom. Weird bug not solved yet
+| | * |   32676b7 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+| | |\ \  
+| | * | | d1396b4 new compare stuff
+| * | | | 3f32bb8 changed table village_category to have an age and interest column
+| | |/ /  
+| |/| |   
+* | | | 10f32ed form update
+| |_|/  
+|/| |   
+* | | 6bba11a form frontend ready
+|/ /  
+* | b901ffc Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\| 
+| *   4d57b98 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+| |\  
+| * | 71bd7ad comparescreen öpdates
+* | | 37b9e6e form search button works now
+| |/  
+|/|   
+* | d2cca28 removed kivymd from sonarcloud
+* | 14dc6c8 removed unnecessary code
+* | 9fc283a first map opening will now be displayed correctly
+|/  
+*   159e513 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\  
+| *   7fc2799 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+| |\  
+| * | 0e1d08c form design update
+* | | 20ec982 comparescreen on the way
+* | |   d00435c Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\ \ \  
+| | |/  
+| |/|   
+| * | f9215b4 hopefully everything works
+* | | 075f6ef merge
+|\| | 
+| * | c729779 detached compareScreen from main
+| * | c5bcf6b removed unnecessary code, fixed minor bugs
+| |/  
+| * e625e39 form update
+* | 4f76d12 wanna pull
+|/  
+* 6acf565 added second view on mapscreen
+*   d019176 merge
+|\  
+| * 285c389 fixed another test
+| * e06619e modified restApiConnection tests
+| * 4ba23fb modified RestApiConnection tests
+| * 42716a1 modified tests and updated travis
+| * 37dda68 decoupled form from main file, form filters now connected and working
+* | 6a43651 forgottoaddfilesbeforecommit
+|/  
+* 3e10592 them changes
+* c4f0088 updated rest_api to handle db changes
+* 64f6eb1 made db changes in listing_location, and created new table village_category
+* 3b4fde4 merged songyi's stuff
+*   24dc4df merge conflicts
+|\  
+| * ab4fa9b added age and price filters
+| * e7170fe api will now check if search params are valid
+| * fdbb9c3 limit listings shown to 10000, if mapview changes old layer will now be removed -> performance significantly increased
+| * 5c0aeb9 added atlas
+* | 62a458b comparescreen and popup
+|/  
+* 58c6520 data
+*   97c9aa9 Merge pull request #12 from flruee/unitTests_restapiconnection
+|\  
+| * e1e3446 (origin/unitTests_restapiconnection) fixed code smells where applicable
+| * 63bbdc4 travis
+| * de28689 fixed tests
+| * 3955693 travis
+| * a4521be travis
+| * 64d59ae travis
+| * 70d8035 travis
+| * e26a396 travis
+| * 2a29d24 modified travis file
+| * 545dac3 modified travis
+| * e5d9a7d changed frontend file structure, added unit test for restAPIConnection
+|/  
+* 6ee2ece fixed my merge fail
+*   47028e8 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\  
+| * 7b4200a swipe
+* |   a27e10b t push origin DevelopmentMerge branch 'flo' into Development
+|\ \  
+| |/  
+|/|   
+| *   491b151 Merge branch 'Development' into flo
+| |\  
+| |/  
+|/|   
+* | de1107c update_form
+* |   598b09a Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+|\ \  
+| * \   c1fb4bb Merge pull request #10 from flruee/main
+| |\ \  
+| | * \   6482c54 (origin/main, origin/HEAD) Merge pull request #8 from flruee/Development
+| | |\ \  
+* | | | | 3569928 change setup
+| | | | * cc25dac added clusterMarker numbers, added restAPIConnection, optimised api connection by 2 magnitudes
+| | | | * b87f882 (origin/flo) added source, fixed imaged
+| | | | * d18aa5b added clusterimgs
+| | | | * 7397d1a connected to address api
+| | |_|/  
+| |/| |   
+| * | | 051b0da (compare) changed gitignore
+| * | |   892a7a1 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+| |\ \ \  
+| | * | | 69cd07e swipe screen
+| * | | | 9ad5f5f changed requirements.txt
+| * | | | e120471 Merge branch 'Development' of https://github.com/flruee/AdvancedSoftwareProject into Development
+| |\| | | 
+| | * | | c11c811 remove virtualenv and add search field
+| | | |/  
+| | |/|   
+| * | | b712a0e updated sonar file, it ignores now rest_api/db and rest_api/setupDB
+| * | | 1b0c49d organised code
+| * | | 387e0f0 added picture to popup, added bookmark button that stores data in bookmarks/
+| * | | 2c8e5fe excluded kivymdfiles from sonar file
+| * | | 71d3144 added test coverage
+| * | | 08cd057 refactored
+| * | | f4c2170 fixed headers
+| * | | 99e869e removed virtual_env
+| * | | e303962 Update .travis.yml
+| * | | 4a073e1 Update .travis.yml
+| * | | e24b1d9 Update .travis.yml
+| * | | 64fa926 Update README.md
+| * | | 4a6a2ac Update .travis.yml
+| * | | 7562f56 Update .travis.yml
+| * | | 9b73921 Update .travis.yml
+| * | | b92cded Update .travis.yml
+| * | | 7e08f78 Update .travis.yml
+| * | | 30c6cc7 Update sonar-project.properties
+| * | | 20cdf26 Update .travis.yml
+| |/ /  
+| * | 1819f09 Merge branch 'main' into Development
+| |\| 
+| | * 8f55852 travis test
+| | *   31a9671 Merge branch 'main' of https://github.com/flruee/AdvancedSoftwareProject into main
+| | |\  
+| | * | c0aa6e5 travis test
+| * | |   0ebf828 merge
+| |\ \ \  
+| | * | | 7cfe06f setting up tests
+| | * | | b5fe826 Update requirements.txt
+| | * | | 23f9ab1 Update requirements.txt
+| | * | | bbcd27f Update requirements.txt
+| | * | | e872531 Update requirements.txt
+| | * | | 224952e Update .travis.yml
+| | * | | 8eb2621 Update .travis.yml
+| | * | | 135a034 Create sonar-project.properties
+| | * | | cf23d01 Update .travis.yml
+| | * | | 446429f Update .travis.yml
+| | * | | 2e91b04 Update .travis.yml
+| | * | | 66cf749 Update .travis.yml
+| | * | | 80877ce Delete settings.json
+| | * | | a218781 Update .gitignore
+| * | | | 2fb39e2 remove cache
+| |/ / /  
+| * | | 486acba frontend updates
+| * | |   0269b87 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+| |\ \ \  
+| | * | | 08f09ff Update README.md
+| | * | | 24b90de added search_address
+| |/ / /  
+|/| | |   
+* | | | 0fb04ed deleted cache
+* | | | 3108546 Update README.md
+* | | |   908ddcc Merge pull request #7 from flruee/rest_api_filtering
+|\ \ \ \  
+| * | | | 736bddb added tests
+| | * | | 49d0c5c unsure
+| | * | | 2c8bbf3  blind push
+| | * | | a4097ad nonsense
+| |/ / /  
+|/| | |   
+* | | |   c2a5f85 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\ \ \ \  
+| * | | | dfabfaa Update .travis.yml
+* | | | | 670a3ec add requirements.txt
+|/ / / /  
+* | | | d30f233 just want to pull
+| | | | * c8d9426 (rest_api_filtering) server.js
+| | |_|/  
+| |/| |   
+| * | | bb119f1 (origin/rest_api_filtering) fixed server
+| * | |   c285f01 Merge branch 'rest_api_filtering' of https://github.com/flruee/AdvancedSoftwareProject into rest_api_filtering
+| |\ \ \  
+| | * | | 33c12dd Update README.md
+| * | | | b9e3082 fixed price and square_feet bug
+| |/ / /  
+| * | |   7d52846 Merge branch 'rest_api_filtering' of https://github.com/flruee/AdvancedSoftwareProject into rest_api_filtering
+| |\ \ \  
+| | * | | 185d482 Update README.md
+| | * | | 9eddca1 Update README.md
+| * | | | 3734079 added new queries
+| * | | | dd0bd50 updated setupDB for bigger dataset
+| |/ / /  
+| * / / adc6314 added filtering and query sanitization
+|/ / /  
+* | | 7eed545 map updates
+* | | be813f3 .git, .travis adjustment
+* | | 4685f94 .gitignore
+* | | 1ba53bd .gitignore adjustment
+* | | ffc59df testing with api
+* | |   72ed59f Merge pull request #6 from flruee/rest_api_addition
+|\ \ \  
+| * | | 24e6f77 Update README.md
+| * | | 3e4c68d formating
+| * | | 0d5291a added location query, documented DB models and Queries
+|/ / /  
+* | |   2ae95a9 Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\ \ \  
+| * | | 40f58de Update README.md
+* | | | 79dd7bd Merge branch 'Development' of github.com:flruee/AdvancedSoftwareProject into Development
+|\| | | 
+| * | |   6bee380 Merge pull request #5 from flruee/unitTest_restApi
+| |\ \ \  
+| | * | | 84999da iii
+| | * | | 7b71ee1 hhh
+| | * | | 10d3906 ggg
+| | * | | ee98de6 printing connection details
+| | * | | f2b02ab printing all tables
+| | * | | 0e841fb ffff
+| | * | | 579439f dd
+| | * | | bcaecf2 ccc
+| | * | | 319b8ce bb
+| | * | | 79e5935 aa
+| | * | | 4ecf191 a
+| | * | | 37f1289 c'mon2 ...
+| | * | | 80910f7 c'mon ...
+| | * | | fa61d64 fixed tabs in travis
+| | * | | d1276d9 another travis
+| | * | | dcc7ce1 yet another travis try out
+| | * | | 73b4da3 another fix
+| | * | | 3306869 fixes travis file
+| | * | | 7f7cfd8 new travis file
+| | * | | 151840f trying multipe builds with travis
+| | * | | 144cade implemented unit/integration tests, added travis file
+| * | | | 1ae011b travis badge
+| |/ / /  
+| * | |   a2ac796 Merge pull request #3 from flruee/initial_rest_api_implementation
+| |\ \ \  
+| | * | | 173f8d8 (origin/initial_rest_api_implementation) updated README
+| | * | | bcb3467 finished inital rest-api
+| | * | | f5c2b1d merged rest-api and db, both can now be started with "docker compose up"
+| | * | | 379f5c7 initial rest-api
+* | | | | df32795 flo's fantastic virtual env
+|/ / / /  
+* | | |   fa5a82a Merge branch 'main' into Development
+|\ \ \ \  
+| | |_|/  
+| |/| |   
+| * | | f952255 (main) pushpushpush
+| * | |   b60db04 Merge branch 'main' of github.com:flruee/AdvancedSoftwareProject into main
+| |\ \ \  
+| | | |/  
+| | |/|   
+| | * | 5a8b967 test
+| * | | ba67dbb stuff
+| |/ /  
+| * | 0e9e5eb init map
+| * | 9d3008a added travis file
+| * | 61beaa7 added travis file
+| * | 5565780 pybuilder
+* | |   6131669 Merge pull request #1 from flruee/setupDB
+|\ \ \  
+| |/ /  
+|/| /   
+| |/    
+| * fe8ed8b added script to load data into db
+|/  
+* 4482839 Initial commit
