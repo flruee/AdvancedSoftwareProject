@@ -1,0 +1,223 @@
+village,age,interest
+Astoria,18-30,Sightseeing
+Astoria,18-30,Art & Music
+Astoria,18-30,Food
+Battery Park City,51-120,Sightseeing
+Belmont,18-30,Food
+Belmont,31-50,Food
+Brooklyn Heights,18-30,Food
+Bushwick,18-30,Art & Music
+Bushwick,18-30,Food
+Bushwick,18-30,Nightlife
+Carroll Gardens,18-30,Food
+Carroll Gardens,18-30,Art & Music
+Carroll Gardens,31-50,Food
+Carroll Gardens,31-50,Art & Music
+Carroll Gardens,51-120,Food
+Carroll Gardens,51-120,Art & Music
+Chelsea,18-30,Art & Music
+Chelsea,18-30,Shopping
+Chelsea,18-30,Food
+Chelsea,18-30,Nightlife
+Chelsea,31-50,Art & Music
+Chelsea,31-50,Shopping
+Chelsea,31-50,Food
+Chelsea,31-50,Nightlife
+Chelsea,51-120,Art & Music
+Chelsea,51-120,Shopping
+Chelsea,51-120,Food
+Chelsea,51-120,Nightlife
+Chinatown,18-30,Food
+Chinatown,18-30,Nightlife
+Chinatown,18-30,Sightseeing
+Chinatown,18-30,Shopping
+City Island,18-30,Food
+City Island,31-50,Food
+City Island,51-120,Food
+Cobble Hill,31-50,Sightseeing
+Cobble Hill,31-50,Food
+Cobble Hill,31-50,Shopping
+Cobble Hill,51-120,Sightseeing
+Cobble Hill,51-120,Food
+Cobble Hill,51-120,Shopping
+Concourse,18-30,Food
+Concourse,18-30,Sightseeing
+Concourse,31-50,Food
+Concourse,31-50,Sightseeing
+Corona,18-30,Art & Music
+Corona,31-50,Art & Music
+Dumbo,18-30,Sightseeing
+Dumbo,18-30,Food
+Dumbo,18-30,Nightlife
+Dumbo,31-50,Sightseeing
+Dumbo,31-50,Food
+Dumbo,31-50,Nightlife
+East Village,18-30,Art & Music
+East Village,18-30,Food
+East Village,18-30,Nightlife
+East Village,31-50,Art & Music
+East Village,31-50,Food
+East Village,31-50,Nightlife
+Flatiron,31-50,Sightseeing
+Flatiron,31-50,Food
+Flatiron,51-120,Sightseeing
+Flatiron,51-120,Food
+Flushing,18-30,Food
+Fordham,18-30,Sightseeing
+Fordham,18-30,Shopping
+Fordham,31-50,Sightseeing
+Fordham,31-50,Shopping
+Fordham,51-120,Sightseeing
+Fordham,51-120,Shopping
+Forest Hills,31-50,Sightseeing
+Forest Hills,51-120,Sightseeing
+Fort Greene,18-30,Art & Music
+Fort Greene,18-30,Food
+Fort Greene,18-30,Shopping
+Fort Greene,18-30,Nightlife
+Fort Greene,31-50,Art & Music
+Fort Greene,31-50,Food
+Fort Greene,31-50,Shopping
+Fort Greene,31-50,Nightlife
+Gramercy,31-50,Sightseeing
+Gramercy,31-50,Art & Music
+Gramercy,51-120,Sightseeing
+Gramercy,51-120,Art & Music
+Great Kills,31-50,Sightseeing
+Great Kills,51-120,Sightseeing
+Greenpoint,18-30,Food
+Greenpoint,18-30,Nightlife
+Greenwich Village,18-30,Art & Music
+Greenwich Village,18-30,Sightseeing
+Greenwich Village,18-30,Food
+Greenwich Village,31-50,Art & Music
+Greenwich Village,31-50,Sightseeing
+Greenwich Village,31-50,Food
+Greenwich Village,51-120,Art & Music
+Greenwich Village,51-120,Sightseeing
+Greenwich Village,51-120,Food
+Jackson Heights,18-30,Food
+Jackson Heights,18-30,Nightlife
+Jackson Heights,31-50,Food
+Jackson Heights,31-50,Nightlife
+Jamaica Hills,31-50,Sightseeing
+Jamaica Hills,51-120,Sightseeing
+Kingsbridge,18-30,Sightseeing
+Kingsbridge,31-50,Sightseeing
+Long Island City,18-30,Sightseeing
+Long Island City,18-30,Nightlife
+Long Island City,18-30,Food
+Long Island City,18-30,Art & Music
+Long Island City,31-50,Sightseeing
+Long Island City,31-50,Nightlife
+Long Island City,31-50,Food
+Long Island City,31-50,Art & Music
+Long Island City,51-120,Sightseeing
+Long Island City,51-120,Nightlife
+Long Island City,51-120,Food
+Long Island City,51-120,Art & Music
+Lower East Side,18-30,Art & Music
+Lower East Side,18-30,Food
+Lower East Side,18-30,Nightlife
+Midtown,18-30,Food
+Midtown,18-30,Sightseeing
+Midtown,18-30,Nightlife
+Midtown,31-50,Food
+Midtown,31-50,Sightseeing
+Midtown,31-50,Nightlife
+Midtown,51-120,Food
+Midtown,51-120,Sightseeing
+Midtown,51-120,Nightlife
+Mott Haven,18-30,Food
+Mott Haven,31-50,Food
+Mott Haven,51-120,Food
+New Dorp,18-30,Food
+New Dorp,18-30,Sightseeing
+New Dorp,18-30,Nightlife
+New Dorp,18-30,Art & Music
+New Dorp,31-50,Food
+New Dorp,31-50,Sightseeing
+New Dorp,31-50,Nightlife
+New Dorp,31-50,Art & Music
+New Dorp,51-120,Food
+New Dorp,51-120,Sightseeing
+New Dorp,51-120,Nightlife
+New Dorp,51-120,Art & Music
+Noho,18-30,Food
+Noho,31-50,Food
+Oakwood,31-50,Shopping
+Oakwood,51-120,Shopping
+Park Slope,31-50,Food
+Park Slope,31-50,Art & Music
+Park Slope,51-120,Food
+Park Slope,51-120,Art & Music
+Randall Manor,51-120,Sightseeing
+Red Hook,18-30,Art & Music
+Red Hook,18-30,Food
+Red Hook,18-30,Nightlife
+Red Hook,31-50,Art & Music
+Red Hook,31-50,Food
+Red Hook,31-50,Nightlife
+Riverdale,51-120,Food
+Rockaway Beach,18-30,Shopping
+Rockaway Beach,18-30,Art & Music
+Rockaway Beach,18-30,Food
+Rockaway Beach,31-50,Shopping
+Rockaway Beach,31-50,Art & Music
+Rockaway Beach,31-50,Food
+Rockaway Beach,51-120,Shopping
+Rockaway Beach,51-120,Art & Music
+Rockaway Beach,51-120,Food
+Soho,18-30,Art & Music
+Soho,18-30,Shopping
+Soho,18-30,Food
+Soho,31-50,Art & Music
+Soho,31-50,Shopping
+Soho,31-50,Food
+Soho,51-120,Art & Music
+Soho,51-120,Shopping
+Soho,51-120,Food
+St. George,18-30,Food
+St. George,18-30,Sightseeing
+St. George,18-30,Nightlife
+St. George,31-50,Food
+St. George,31-50,Sightseeing
+St. George,31-50,Nightlife
+St. George,51-120,Food
+St. George,51-120,Sightseeing
+St. George,51-120,Nightlife
+Sunnyside,18-30,Sightseeing
+Sunnyside,18-30,Food
+Sunnyside,18-30,Nightlife
+Sunnyside,31-50,Sightseeing
+Sunnyside,31-50,Food
+Sunnyside,31-50,Nightlife
+Sunnyside,51-120,Sightseeing
+Sunnyside,51-120,Food
+Sunnyside,51-120,Nightlife
+Todt Hill,51-120,Food
+Tompkinsville,31-50,Food
+Tompkinsville,31-50,Sightseeing
+Tompkinsville,51-120,Food
+Tompkinsville,51-120,Sightseeing
+Tribeca,31-50,Food
+Tribeca,31-50,Sightseeing
+Tribeca,51-120,Food
+Tribeca,51-120,Sightseeing
+Upper East Side,31-50,Shopping
+Upper East Side,31-50,Sightseeing
+Upper East Side,51-120,Shopping
+Upper East Side,51-120,Sightseeing
+Upper West Side,51-120,Sightseeing
+Upper West Side,51-120,Food
+West Brighton,31-50,Food
+West Brighton,51-120,Food
+West Village,18-30,Food
+West Village,18-30,Shopping
+West Village,31-50,Food
+West Village,31-50,Shopping
+Williamsburg,18-30,Nightlife
+Williamsburg,18-30,Food
+Williamsburg,18-30,Shopping
+Woodlawn,18-30,Nightlife
+Woodlawn,31-50,Nightlife

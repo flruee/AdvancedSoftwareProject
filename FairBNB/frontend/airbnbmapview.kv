@@ -1,0 +1,20 @@
+#:import MapView kivy.garden.mapview.MapView
+
+
+<AirbnbMapView>:
+    id: mapview
+    double_tap_zoom: True
+    lat: 40.754
+    lon: -73.984
+    zoom: 16    #11 is good production startup, 16 good dev startup
+    on_zoom:
+        self.zoom = 10 if self.zoom < 10 else self.zoom
+    on_lat:
+        self.get_airbnb_in_fov()
+    on_lon:
+        #self.start_getting_airbnb_in_fov()
+        self.get_airbnb_in_fov()
+    on_loaded:
+        print(self.loaded)
+    loaded: True
+

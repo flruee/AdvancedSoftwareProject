@@ -1,7 +1,19 @@
 services:
   rest-api:
     build: .
+    image: moerfi/fairbnb:rest-api
     ports:
       - 8888:8888
+    environment:
+      - PORT=8888
+      - DB_HOST=rest_api_postgres_1
+      - DB_USER=postgres
+      - DB_PASSWORD=aseisgreat
+      - DB_NAME=ase
+      - DB_PORT=5432
   postgres:
     build: ./db/
+    image: moerfi/fairbnb:postgres
+    ports:
+      - 8887:5432
+

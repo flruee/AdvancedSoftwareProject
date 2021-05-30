@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon ./src/server.js",
     "daemon": "nodemon .",
-    "test": "mocha"
+    "test": "nyc --reporter=lcov --reporter=text-lcov mocha"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "express": "^4.17.1",
     "mocha": "^8.3.2",
     "nodemon": "^2.0.7",
+    "nyc": "^15.1.0",
     "pg": "^8.5.1",
     "sanitize": "^2.1.0"
   }

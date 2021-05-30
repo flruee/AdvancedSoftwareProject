@@ -1,0 +1,664 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>frontend.components.filtering package &mdash; FairBnB  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="frontend.components.form package" href="frontend.components.form.html" />
+    <link rel="prev" title="frontend.components.compare package" href="frontend.components.compare.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FairBnB
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">FairBNB</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="frontend.html">frontend package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="frontend.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="frontend.components.html">frontend.components package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frontend.mapViewOverride.html">frontend.mapViewOverride package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#module-frontend.airbnbmapview">frontend.airbnbmapview module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#module-frontend.listingDetail">frontend.listingDetail module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#frontend-main-module">frontend.main module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#module-frontend">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="restAPIConnection.html">restAPIConnection package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FairBnB</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">FairBNB</a> &raquo;</li>
+        
+          <li><a href="frontend.html">frontend package</a> &raquo;</li>
+        
+          <li><a href="frontend.components.html">frontend.components package</a> &raquo;</li>
+        
+      <li>frontend.components.filtering package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/frontend.components.filtering.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="frontend-components-filtering-package">
+<h1>frontend.components.filtering package<a class="headerlink" href="#frontend-components-filtering-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-frontend.components.filtering.filterButtons">
+<span id="frontend-components-filtering-filterbuttons-module"></span><h2>frontend.components.filtering.filterButtons module<a class="headerlink" href="#module-frontend.components.filtering.filterButtons" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="frontend.components.filtering.filterButtons.ApplyFilterButton">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.components.filtering.filterButtons.</code><code class="sig-name descname">ApplyFilterButton</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.filterButtons.ApplyFilterButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">kivy.uix.button.Button</span></code></p>
+<p>Creates an “Apply Filter” button.
+On click it will set the filters on the RestAPIConnection class.</p>
+<dl class="py method">
+<dt id="frontend.components.filtering.filterButtons.ApplyFilterButton.on_release">
+<code class="sig-name descname">on_release</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.filterButtons.ApplyFilterButton.on_release" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="frontend.components.filtering.filterButtons.ResetFilterButton">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.components.filtering.filterButtons.</code><code class="sig-name descname">ResetFilterButton</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.filterButtons.ResetFilterButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">kivy.uix.button.Button</span></code></p>
+<p>Creates a “Reset Filters” Button iff some filters are already set (to be precise after the “Apply filters” button was pressed).
+On click it will reset all filters in the RestAPIConnection class.</p>
+<dl class="py method">
+<dt id="frontend.components.filtering.filterButtons.ResetFilterButton.hide">
+<code class="sig-name descname">hide</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.filterButtons.ResetFilterButton.hide" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.filterButtons.ResetFilterButton.on_release">
+<code class="sig-name descname">on_release</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.filterButtons.ResetFilterButton.on_release" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.filterButtons.ResetFilterButton.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.filterButtons.ResetFilterButton.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-frontend.components.filtering.filterMenu">
+<span id="frontend-components-filtering-filtermenu-module"></span><h2>frontend.components.filtering.filterMenu module<a class="headerlink" href="#module-frontend.components.filtering.filterMenu" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="frontend.components.filtering.filterMenu.FilterMenu">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.components.filtering.filterMenu.</code><code class="sig-name descname">FilterMenu</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.filterMenu.FilterMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">kivymd.uix.card.MDCard</span></code></p>
+<dl class="py method">
+<dt id="frontend.components.filtering.filterMenu.FilterMenu.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.filterMenu.FilterMenu.build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-frontend.components.filtering.rangeSlider">
+<span id="frontend-components-filtering-rangeslider-module"></span><h2>frontend.components.filtering.rangeSlider module<a class="headerlink" href="#module-frontend.components.filtering.rangeSlider" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.components.filtering.rangeSlider.</code><code class="sig-name descname">RangeSlider</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">kivy.uix.widget.Widget</span></code></p>
+<p>Class for creating a RangeSlider widget.</p>
+<p>Check module documentation for more details.</p>
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.connector_color">
+<code class="sig-name descname">connector_color</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.connector_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connector bar color, in the format (r, g, b, a).
+for disabling this bar use a = .0</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.get_norm_value1">
+<code class="sig-name descname">get_norm_value1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.get_norm_value1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.get_norm_value2">
+<code class="sig-name descname">get_norm_value2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.get_norm_value2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.get_value1_pos">
+<code class="sig-name descname">get_value1_pos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.get_value1_pos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.get_value2_pos">
+<code class="sig-name descname">get_value2_pos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.get_value2_pos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.max">
+<code class="sig-name descname">max</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum value allowed for <a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.value" title="frontend.components.filtering.rangeSlider.RangeSlider.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a>.</p>
+<p><a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.max" title="frontend.components.filtering.rangeSlider.RangeSlider.max"><code class="xref py py-attr docutils literal notranslate"><span class="pre">max</span></code></a> is a <code class="xref py py-class docutils literal notranslate"><span class="pre">NumericProperty</span></code> and defaults to
+100.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.min">
+<code class="sig-name descname">min</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum value allowed for <a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.value" title="frontend.components.filtering.rangeSlider.RangeSlider.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a>.</p>
+<p><a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.min" title="frontend.components.filtering.rangeSlider.RangeSlider.min"><code class="xref py py-attr docutils literal notranslate"><span class="pre">min</span></code></a> is a <code class="xref py py-class docutils literal notranslate"><span class="pre">NumericProperty</span></code> and defaults to
+0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.on_max">
+<code class="sig-name descname">on_max</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">largs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.on_max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.on_min">
+<code class="sig-name descname">on_min</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">largs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.on_min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.on_touch_down">
+<code class="sig-name descname">on_touch_down</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">touch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.on_touch_down" title="Permalink to this definition">¶</a></dt>
+<dd><p>Receive a touch down event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>touch</cite>: <code class="xref py py-class docutils literal notranslate"><span class="pre">MotionEvent</span></code> class</dt><dd><p>Touch received. The touch is in parent coordinates. See
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">relativelayout</span></code> for a discussion on
+coordinate systems.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool
+If True, the dispatching of the touch event will stop.
+If False, the event will continue to be dispatched to the rest
+of the widget tree.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.on_touch_move">
+<code class="sig-name descname">on_touch_move</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">touch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.on_touch_move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Receive a touch move event. The touch is in parent coordinates.</p>
+<p>See <a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.on_touch_down" title="frontend.components.filtering.rangeSlider.RangeSlider.on_touch_down"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_touch_down()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.on_touch_up">
+<code class="sig-name descname">on_touch_up</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">touch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.on_touch_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Receive a touch up event. The touch is in parent coordinates.</p>
+<p>See <a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.on_touch_down" title="frontend.components.filtering.rangeSlider.RangeSlider.on_touch_down"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_touch_down()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.orientation">
+<code class="sig-name descname">orientation</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.orientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orientation of the slider.</p>
+<p><a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.orientation" title="frontend.components.filtering.rangeSlider.RangeSlider.orientation"><code class="xref py py-attr docutils literal notranslate"><span class="pre">orientation</span></code></a> is an <code class="xref py py-class docutils literal notranslate"><span class="pre">OptionProperty</span></code> and
+defaults to ‘horizontal’. Can take a value of ‘vertical’ or ‘horizontal’.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.padding">
+<code class="sig-name descname">padding</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.padding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Padding of the slider. The padding is used for graphical representation
+and interaction. It prevents the cursor from going out of the bounds of the
+slider bounding box.</p>
+<p>By default, padding is sp(16). The range of the slider is reduced from
+padding *2 on the screen. It allows drawing the default cursor of sp(32)
+width without having the cursor go out of the widget.</p>
+<p><a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.padding" title="frontend.components.filtering.rangeSlider.RangeSlider.padding"><code class="xref py py-attr docutils literal notranslate"><span class="pre">padding</span></code></a> is a <code class="xref py py-class docutils literal notranslate"><span class="pre">NumericProperty</span></code> and defaults
+to sp(16).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.range">
+<code class="sig-name descname">range</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Range of the slider in the format (minimum value, maximum value):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span> <span class="o">=</span> <span class="n">Slider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">range</span>
+<span class="go">[10, 80]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">min</span>
+<span class="go">20</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">max</span>
+<span class="go">100</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.range" title="frontend.components.filtering.rangeSlider.RangeSlider.range"><code class="xref py py-attr docutils literal notranslate"><span class="pre">range</span></code></a> is a <code class="xref py py-class docutils literal notranslate"><span class="pre">ReferenceListProperty</span></code> of
+(<a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.min" title="frontend.components.filtering.rangeSlider.RangeSlider.min"><code class="xref py py-attr docutils literal notranslate"><span class="pre">min</span></code></a>, <a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.max" title="frontend.components.filtering.rangeSlider.RangeSlider.max"><code class="xref py py-attr docutils literal notranslate"><span class="pre">max</span></code></a>) properties.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.set_norm_value1">
+<code class="sig-name descname">set_norm_value1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.set_norm_value1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.set_norm_value2">
+<code class="sig-name descname">set_norm_value2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.set_norm_value2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.set_value1_pos">
+<code class="sig-name descname">set_value1_pos</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pos</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.set_value1_pos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.set_value2_pos">
+<code class="sig-name descname">set_value2_pos</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pos</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.set_value2_pos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.step">
+<code class="sig-name descname">step</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Step size of the slider.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 1.4.0.</span></p>
+</div>
+<p>Determines the size of each interval or step the slider takes between
+min and max. If the value range can’t be evenly divisible by step the
+last step will be capped by slider.max</p>
+<p><a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.step" title="frontend.components.filtering.rangeSlider.RangeSlider.step"><code class="xref py py-attr docutils literal notranslate"><span class="pre">step</span></code></a> is a <code class="xref py py-class docutils literal notranslate"><span class="pre">NumericProperty</span></code> and defaults
+to 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current value used for the both sliders.</p>
+<p><a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.value" title="frontend.components.filtering.rangeSlider.RangeSlider.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a> is an <code class="xref py py-class docutils literal notranslate"><span class="pre">AliasProperty</span></code> and defaults
+to [0, 0].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.value1">
+<code class="sig-name descname">value1</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.value1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current value used for the first slider.</p>
+<p><a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.value" title="frontend.components.filtering.rangeSlider.RangeSlider.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a> is a <code class="xref py py-class docutils literal notranslate"><span class="pre">NumericProperty</span></code> and defaults
+to 0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.value1_normalized">
+<code class="sig-name descname">value1_normalized</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.value1_normalized" title="Permalink to this definition">¶</a></dt>
+<dd><p>AliasProperty(getter, setter=None, rebind=False, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs)
+Create a property with a custom getter and setter.</p>
+<blockquote>
+<div><p>If you don’t find a Property class that fits to your needs, you can make
+your own by creating custom Python getter and setter methods.</p>
+<p>Example from kivy/uix/widget.py where <cite>x</cite> and <cite>width</cite> are instances of
+<code class="xref py py-class docutils literal notranslate"><span class="pre">NumericProperty</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_right</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span>
+<span class="k">def</span> <span class="nf">set_right</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span>
+<span class="n">right</span> <span class="o">=</span> <span class="n">AliasProperty</span><span class="p">(</span><span class="n">get_right</span><span class="p">,</span> <span class="n">set_right</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>If <cite>x</cite> were a non Kivy property then you have to return <cite>True</cite> from setter
+to dispatch new value of <cite>right</cite>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">set_right</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>Usually <cite>bind</cite> list should contain all Kivy properties used in getter
+method. If you return <cite>True</cite> it will cause a dispatch which one should do
+when the property value has changed, but keep in mind that the property
+could already have dispatched the changed value if a kivy property the
+alias property is bound was set in the setter, causing a second dispatch
+if the setter returns <cite>True</cite>.</p>
+<p>If you want to cache the value returned by getter then pass <cite>cache=True</cite>.
+This way getter will only be called if new value is set or one of the
+binded properties changes. In both cases new value of alias property will
+be cached again.</p>
+<p>To make property readonly pass <cite>None</cite> as setter. This way <cite>AttributeError</cite>
+will be raised on every set attempt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">right</span> <span class="o">=</span> <span class="n">AliasProperty</span><span class="p">(</span><span class="n">get_right</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">],</span> <span class="n">cache</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>getter</cite>: function</dt><dd><p>Function to use as a property getter.</p>
+</dd>
+<dt><cite>setter</cite>: function</dt><dd><p>Function to use as a property setter. Callbacks bound to the
+alias property won’t be called when the property is set (e.g.
+<cite>right = 10</cite>), unless the setter returns <cite>True</cite>.</p>
+</dd>
+<dt><cite>bind</cite>: list/tuple</dt><dd><p>Properties to observe for changes as property name strings.
+Changing values of this properties will dispatch value of the
+alias property.</p>
+</dd>
+<dt><cite>cache</cite>: boolean</dt><dd><p>If <cite>True</cite>, the value will be cached until one of the binded
+elements changes or if setter returns <cite>True</cite>.</p>
+</dd>
+<dt><cite>rebind</cite>: bool, defaults to <cite>False</cite></dt><dd><p>See <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectProperty</span></code> for details.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.9.0: </span><cite>rebind</cite> has been introduced.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.4.0: </span>Parameter <cite>cache</cite> added.</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.value1_pos">
+<code class="sig-name descname">value1_pos</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.value1_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>AliasProperty(getter, setter=None, rebind=False, <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs)
+Create a property with a custom getter and setter.</p>
+<blockquote>
+<div><p>If you don’t find a Property class that fits to your needs, you can make
+your own by creating custom Python getter and setter methods.</p>
+<p>Example from kivy/uix/widget.py where <cite>x</cite> and <cite>width</cite> are instances of
+<code class="xref py py-class docutils literal notranslate"><span class="pre">NumericProperty</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_right</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span>
+<span class="k">def</span> <span class="nf">set_right</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span>
+<span class="n">right</span> <span class="o">=</span> <span class="n">AliasProperty</span><span class="p">(</span><span class="n">get_right</span><span class="p">,</span> <span class="n">set_right</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>If <cite>x</cite> were a non Kivy property then you have to return <cite>True</cite> from setter
+to dispatch new value of <cite>right</cite>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">set_right</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>Usually <cite>bind</cite> list should contain all Kivy properties used in getter
+method. If you return <cite>True</cite> it will cause a dispatch which one should do
+when the property value has changed, but keep in mind that the property
+could already have dispatched the changed value if a kivy property the
+alias property is bound was set in the setter, causing a second dispatch
+if the setter returns <cite>True</cite>.</p>
+<p>If you want to cache the value returned by getter then pass <cite>cache=True</cite>.
+This way getter will only be called if new value is set or one of the
+binded properties changes. In both cases new value of alias property will
+be cached again.</p>
+<p>To make property readonly pass <cite>None</cite> as setter. This way <cite>AttributeError</cite>
+will be raised on every set attempt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">right</span> <span class="o">=</span> <span class="n">AliasProperty</span><span class="p">(</span><span class="n">get_right</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">],</span> <span class="n">cache</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>getter</cite>: function</dt><dd><p>Function to use as a property getter.</p>
+</dd>
+<dt><cite>setter</cite>: function</dt><dd><p>Function to use as a property setter. Callbacks bound to the
+alias property won’t be called when the property is set (e.g.
+<cite>right = 10</cite>), unless the setter returns <cite>True</cite>.</p>
+</dd>
+<dt><cite>bind</cite>: list/tuple</dt><dd><p>Properties to observe for changes as property name strings.
+Changing values of this properties will dispatch value of the
+alias property.</p>
+</dd>
+<dt><cite>cache</cite>: boolean</dt><dd><p>If <cite>True</cite>, the value will be cached until one of the binded
+elements changes or if setter returns <cite>True</cite>.</p>
+</dd>
+<dt><cite>rebind</cite>: bool, defaults to <cite>False</cite></dt><dd><p>See <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectProperty</span></code> for details.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.9.0: </span><cite>rebind</cite> has been introduced.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.4.0: </span>Parameter <cite>cache</cite> added.</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.value2">
+<code class="sig-name descname">value2</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.value2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current value used for the second slider.</p>
+<p><a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.value" title="frontend.components.filtering.rangeSlider.RangeSlider.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a> is a <code class="xref py py-class docutils literal notranslate"><span class="pre">NumericProperty</span></code> and defaults
+to 0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.value2_normalized">
+<code class="sig-name descname">value2_normalized</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.value2_normalized" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalized value inside the <a class="reference internal" href="#frontend.components.filtering.rangeSlider.RangeSlider.range" title="frontend.components.filtering.rangeSlider.RangeSlider.range"><code class="xref py py-attr docutils literal notranslate"><span class="pre">range</span></code></a> (min/max) to 0-1 range:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span> <span class="o">=</span> <span class="n">Slider</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value</span>
+<span class="go">50</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value_normalized</span>
+<span class="go">0.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value_normalized</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value_normalized</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+<p>You can also use it for setting the real value without knowing the minimum
+and maximum:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span> <span class="o">=</span> <span class="n">Slider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value_normalized</span> <span class="o">=</span> <span class="mf">.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value</span>
+<span class="go">100</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value_normalized</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span><span class="o">.</span><span class="n">value</span>
+<span class="go">200</span>
+</pre></div>
+</div>
+<p><code class="xref py py-attr docutils literal notranslate"><span class="pre">value_normalized</span></code> is an <code class="xref py py-class docutils literal notranslate"><span class="pre">AliasProperty</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.components.filtering.rangeSlider.RangeSlider.value2_pos">
+<code class="sig-name descname">value2_pos</code><a class="headerlink" href="#frontend.components.filtering.rangeSlider.RangeSlider.value2_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position of the internal cursor, based on the normalized value.</p>
+<p><code class="xref py py-attr docutils literal notranslate"><span class="pre">value_pos</span></code> is an <code class="xref py py-class docutils literal notranslate"><span class="pre">AliasProperty</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-frontend.components.filtering">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-frontend.components.filtering" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="frontend.components.form.html" class="btn btn-neutral float-right" title="frontend.components.form package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="frontend.components.compare.html" class="btn btn-neutral float-left" title="frontend.components.compare package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Songyi Han, Ben Murphy, Florian Rüegsegger.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

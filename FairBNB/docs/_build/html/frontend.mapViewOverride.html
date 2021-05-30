@@ -1,0 +1,760 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>frontend.mapViewOverride package &mdash; FairBnB  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="restAPIConnection package" href="restAPIConnection.html" />
+    <link rel="prev" title="frontend.components.map package" href="frontend.components.map.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FairBnB
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">FairBNB</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="frontend.html">frontend package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="frontend.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="frontend.components.html">frontend.components package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">frontend.mapViewOverride package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#module-frontend.airbnbmapview">frontend.airbnbmapview module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#module-frontend.listingDetail">frontend.listingDetail module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#frontend-main-module">frontend.main module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html#module-frontend">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="restAPIConnection.html">restAPIConnection package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FairBnB</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">FairBNB</a> &raquo;</li>
+        
+          <li><a href="frontend.html">frontend package</a> &raquo;</li>
+        
+      <li>frontend.mapViewOverride package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/frontend.mapViewOverride.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="frontend-mapviewoverride-package">
+<h1>frontend.mapViewOverride package<a class="headerlink" href="#frontend-mapviewoverride-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-frontend.mapViewOverride.clustered_marker_layer">
+<span id="frontend-mapviewoverride-clustered-marker-layer-module"></span><h2>frontend.mapViewOverride.clustered_marker_layer module<a class="headerlink" href="#module-frontend.mapViewOverride.clustered_marker_layer" title="Permalink to this headline">¶</a></h2>
+<section id="layer-that-support-point-clustering">
+<h3>Layer that support point clustering<a class="headerlink" href="#layer-that-support-point-clustering" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.Cluster">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">Cluster</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">num_points</span></em>, <em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">props</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.Cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">ClusterMapMarker</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">kivy_garden.mapview.view.MapMarker</span></code></p>
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.cluster">
+<code class="sig-name descname">cluster</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>ObjectProperty(defaultvalue=None, rebind=False, <a href="#id1"><span class="problematic" id="id2">**</span></a>kw)
+Property that represents a Python object.</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><cite>defaultvalue</cite>: object type</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+<dt><cite>rebind</cite>: bool, defaults to False</dt><dd><p>Whether kv rules using this object as an intermediate attribute
+in a kv rule, will update the bound property when this object
+changes.</p>
+<p>That is the standard behavior is that if there’s a kv rule
+<code class="docutils literal notranslate"><span class="pre">text:</span> <span class="pre">self.a.b.c.d</span></code>, where <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code> are
+properties with <code class="docutils literal notranslate"><span class="pre">rebind</span></code> <code class="docutils literal notranslate"><span class="pre">False</span></code> and <code class="docutils literal notranslate"><span class="pre">d</span></code> is a
+<code class="xref py py-class docutils literal notranslate"><span class="pre">StringProperty</span></code>. Then when the rule is applied, <code class="docutils literal notranslate"><span class="pre">text</span></code>
+becomes bound only to <code class="docutils literal notranslate"><span class="pre">d</span></code>. If <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, or <code class="docutils literal notranslate"><span class="pre">c</span></code> change,
+<code class="docutils literal notranslate"><span class="pre">text</span></code> still remains bound to <code class="docutils literal notranslate"><span class="pre">d</span></code>. Furthermore, if any of them
+were <code class="docutils literal notranslate"><span class="pre">None</span></code> when the rule was initially evaluated, e.g. <code class="docutils literal notranslate"><span class="pre">b</span></code> was
+<code class="docutils literal notranslate"><span class="pre">None</span></code>; then <code class="docutils literal notranslate"><span class="pre">text</span></code> is bound to <code class="docutils literal notranslate"><span class="pre">b</span></code> and will not become bound
+to <code class="docutils literal notranslate"><span class="pre">d</span></code> even when <code class="docutils literal notranslate"><span class="pre">b</span></code> is changed to not be <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<p>By setting <code class="docutils literal notranslate"><span class="pre">rebind</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, however, the rule will be
+re-evaluated and all the properties rebound when that intermediate
+property changes. E.g. in the example above, whenever <code class="docutils literal notranslate"><span class="pre">b</span></code> changes
+or becomes not <code class="docutils literal notranslate"><span class="pre">None</span></code> if it was <code class="docutils literal notranslate"><span class="pre">None</span></code> before, <code class="docutils literal notranslate"><span class="pre">text</span></code> is
+evaluated again and becomes rebound to <code class="docutils literal notranslate"><span class="pre">d</span></code>. The overall result is
+that <code class="docutils literal notranslate"><span class="pre">text</span></code> is now bound to all the properties among <code class="docutils literal notranslate"><span class="pre">a</span></code>,
+<code class="docutils literal notranslate"><span class="pre">b</span></code>, or <code class="docutils literal notranslate"><span class="pre">c</span></code> that have <code class="docutils literal notranslate"><span class="pre">rebind</span></code> set to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</dd>
+<dt><cite>**kwargs</cite>: a list of keyword arguments</dt><dd><dl class="simple">
+<dt><cite>baseclass</cite></dt><dd><p>If kwargs includes a <cite>baseclass</cite> argument, this value will be
+used for validation: <cite>isinstance(value, kwargs[‘baseclass’])</cite>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To mark the property as changed, you must reassign a new python object.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.9.0: </span><cite>rebind</cite> has been introduced.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.7.0: </span><cite>baseclass</cite> parameter added.</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.num_points">
+<code class="sig-name descname">num_points</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.num_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>NumericProperty(defaultvalue=0, <a href="#id3"><span class="problematic" id="id4">**</span></a>kw)
+Property that represents a numeric value.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>defaultvalue</cite>: int or float, defaults to 0</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span> <span class="o">=</span> <span class="n">Widget</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">wid</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="go">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;plop&quot;</span>
+<span class="go"> Traceback (most recent call last):</span>
+<span class="go">   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 93, in kivy.properties.Property.__set__</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 111, in kivy.properties.Property.set</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 159, in kivy.properties.NumericProperty.check</span>
+<span class="go"> ValueError: NumericProperty accept only int/float</span>
+</pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.4.1: </span>NumericProperty can now accept custom text and tuple value to indicate a
+type, like “in”, “pt”, “px”, “cm”, “mm”, in the format: ‘10pt’ or (10,
+‘pt’).</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.on_cluster">
+<code class="sig-name descname">on_cluster</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">instance</span></em>, <em class="sig-param"><span class="n">cluster</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.on_cluster" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.on_release">
+<code class="sig-name descname">on_release</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.on_release" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.source">
+<code class="sig-name descname">source</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.source" title="Permalink to this definition">¶</a></dt>
+<dd><p>StringProperty(defaultvalue=u’’, <a href="#id5"><span class="problematic" id="id6">**</span></a>kw)
+Property that represents a string value.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>defaultvalue</cite>: string, defaults to ‘’</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.text_color">
+<code class="sig-name descname">text_color</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusterMapMarker.text_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>ListProperty(defaultvalue=0, <a href="#id7"><span class="problematic" id="id8">**</span></a>kw)
+Property that represents a list.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>defaultvalue</cite>: list, defaults to []</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When assigning a list to a <code class="xref py py-class docutils literal notranslate"><span class="pre">ListProperty</span></code>, the list stored in
+the property is a shallow copy of the list and not the original list. This can
+be demonstrated with the following example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">MyWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">my_list</span> <span class="o">=</span> <span class="n">ListProperty</span><span class="p">([])</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">widget</span> <span class="o">=</span> <span class="n">MyWidget</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;hi&#39;</span><span class="p">:</span> <span class="s1">&#39;hello&#39;</span><span class="p">}]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">widget</span><span class="o">.</span><span class="n">my_list</span> <span class="o">=</span> <span class="n">my_list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span> <span class="ow">is</span> <span class="n">widget</span><span class="o">.</span><span class="n">my_list</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">widget</span><span class="o">.</span><span class="n">my_list</span><span class="p">)</span>
+<span class="go">[1, 5, {&#39;hi&#39;: &#39;hello&#39;}, 10] [1, 5, {&#39;hi&#39;: &#39;hello&#39;}]</span>
+</pre></div>
+</div>
+<p>However, changes to nested levels will affect the property as well,
+since the property uses a shallow copy of my_list.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">my_list</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;hi&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;bye&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">widget</span><span class="o">.</span><span class="n">my_list</span><span class="p">)</span>
+<span class="go">[1, 5, {&#39;hi&#39;: &#39;bye&#39;}, 10] [1, 5, {&#39;hi&#39;: &#39;bye&#39;}]</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">ClusteredMarkerLayer</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">kivy_garden.mapview.view.MapLayer</span></code></p>
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.add_marker">
+<code class="sig-name descname">add_marker</code><span class="sig-paren">(</span><em class="sig-param">lon</em>, <em class="sig-param">lat</em>, <em class="sig-param">cls=&lt;class 'kivy_garden.mapview.view.MapMarker'&gt;</em>, <em class="sig-param">options=None</em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.add_marker" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.build_cluster">
+<code class="sig-name descname">build_cluster</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.build_cluster" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_cls">
+<code class="sig-name descname">cluster_cls</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_cls" title="Permalink to this definition">¶</a></dt>
+<dd><p>ObjectProperty(defaultvalue=None, rebind=False, <a href="#id9"><span class="problematic" id="id10">**</span></a>kw)
+Property that represents a Python object.</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><cite>defaultvalue</cite>: object type</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+<dt><cite>rebind</cite>: bool, defaults to False</dt><dd><p>Whether kv rules using this object as an intermediate attribute
+in a kv rule, will update the bound property when this object
+changes.</p>
+<p>That is the standard behavior is that if there’s a kv rule
+<code class="docutils literal notranslate"><span class="pre">text:</span> <span class="pre">self.a.b.c.d</span></code>, where <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code> are
+properties with <code class="docutils literal notranslate"><span class="pre">rebind</span></code> <code class="docutils literal notranslate"><span class="pre">False</span></code> and <code class="docutils literal notranslate"><span class="pre">d</span></code> is a
+<code class="xref py py-class docutils literal notranslate"><span class="pre">StringProperty</span></code>. Then when the rule is applied, <code class="docutils literal notranslate"><span class="pre">text</span></code>
+becomes bound only to <code class="docutils literal notranslate"><span class="pre">d</span></code>. If <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, or <code class="docutils literal notranslate"><span class="pre">c</span></code> change,
+<code class="docutils literal notranslate"><span class="pre">text</span></code> still remains bound to <code class="docutils literal notranslate"><span class="pre">d</span></code>. Furthermore, if any of them
+were <code class="docutils literal notranslate"><span class="pre">None</span></code> when the rule was initially evaluated, e.g. <code class="docutils literal notranslate"><span class="pre">b</span></code> was
+<code class="docutils literal notranslate"><span class="pre">None</span></code>; then <code class="docutils literal notranslate"><span class="pre">text</span></code> is bound to <code class="docutils literal notranslate"><span class="pre">b</span></code> and will not become bound
+to <code class="docutils literal notranslate"><span class="pre">d</span></code> even when <code class="docutils literal notranslate"><span class="pre">b</span></code> is changed to not be <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<p>By setting <code class="docutils literal notranslate"><span class="pre">rebind</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, however, the rule will be
+re-evaluated and all the properties rebound when that intermediate
+property changes. E.g. in the example above, whenever <code class="docutils literal notranslate"><span class="pre">b</span></code> changes
+or becomes not <code class="docutils literal notranslate"><span class="pre">None</span></code> if it was <code class="docutils literal notranslate"><span class="pre">None</span></code> before, <code class="docutils literal notranslate"><span class="pre">text</span></code> is
+evaluated again and becomes rebound to <code class="docutils literal notranslate"><span class="pre">d</span></code>. The overall result is
+that <code class="docutils literal notranslate"><span class="pre">text</span></code> is now bound to all the properties among <code class="docutils literal notranslate"><span class="pre">a</span></code>,
+<code class="docutils literal notranslate"><span class="pre">b</span></code>, or <code class="docutils literal notranslate"><span class="pre">c</span></code> that have <code class="docutils literal notranslate"><span class="pre">rebind</span></code> set to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</dd>
+<dt><cite>**kwargs</cite>: a list of keyword arguments</dt><dd><dl class="simple">
+<dt><cite>baseclass</cite></dt><dd><p>If kwargs includes a <cite>baseclass</cite> argument, this value will be
+used for validation: <cite>isinstance(value, kwargs[‘baseclass’])</cite>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To mark the property as changed, you must reassign a new python object.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.9.0: </span><cite>rebind</cite> has been introduced.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.7.0: </span><cite>baseclass</cite> parameter added.</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_cls_source">
+<code class="sig-name descname">cluster_cls_source</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_cls_source" title="Permalink to this definition">¶</a></dt>
+<dd><p>StringProperty(defaultvalue=u’’, <a href="#id11"><span class="problematic" id="id12">**</span></a>kw)
+Property that represents a string value.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>defaultvalue</cite>: string, defaults to ‘’</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_extent">
+<code class="sig-name descname">cluster_extent</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_extent" title="Permalink to this definition">¶</a></dt>
+<dd><p>NumericProperty(defaultvalue=0, <a href="#id13"><span class="problematic" id="id14">**</span></a>kw)
+Property that represents a numeric value.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>defaultvalue</cite>: int or float, defaults to 0</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span> <span class="o">=</span> <span class="n">Widget</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">wid</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="go">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;plop&quot;</span>
+<span class="go"> Traceback (most recent call last):</span>
+<span class="go">   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 93, in kivy.properties.Property.__set__</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 111, in kivy.properties.Property.set</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 159, in kivy.properties.NumericProperty.check</span>
+<span class="go"> ValueError: NumericProperty accept only int/float</span>
+</pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.4.1: </span>NumericProperty can now accept custom text and tuple value to indicate a
+type, like “in”, “pt”, “px”, “cm”, “mm”, in the format: ‘10pt’ or (10,
+‘pt’).</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_max_zoom">
+<code class="sig-name descname">cluster_max_zoom</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_max_zoom" title="Permalink to this definition">¶</a></dt>
+<dd><p>NumericProperty(defaultvalue=0, <a href="#id15"><span class="problematic" id="id16">**</span></a>kw)
+Property that represents a numeric value.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>defaultvalue</cite>: int or float, defaults to 0</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span> <span class="o">=</span> <span class="n">Widget</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">wid</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="go">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;plop&quot;</span>
+<span class="go"> Traceback (most recent call last):</span>
+<span class="go">   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 93, in kivy.properties.Property.__set__</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 111, in kivy.properties.Property.set</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 159, in kivy.properties.NumericProperty.check</span>
+<span class="go"> ValueError: NumericProperty accept only int/float</span>
+</pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.4.1: </span>NumericProperty can now accept custom text and tuple value to indicate a
+type, like “in”, “pt”, “px”, “cm”, “mm”, in the format: ‘10pt’ or (10,
+‘pt’).</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_min_zoom">
+<code class="sig-name descname">cluster_min_zoom</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_min_zoom" title="Permalink to this definition">¶</a></dt>
+<dd><p>NumericProperty(defaultvalue=0, <a href="#id17"><span class="problematic" id="id18">**</span></a>kw)
+Property that represents a numeric value.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>defaultvalue</cite>: int or float, defaults to 0</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span> <span class="o">=</span> <span class="n">Widget</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">wid</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="go">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;plop&quot;</span>
+<span class="go"> Traceback (most recent call last):</span>
+<span class="go">   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 93, in kivy.properties.Property.__set__</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 111, in kivy.properties.Property.set</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 159, in kivy.properties.NumericProperty.check</span>
+<span class="go"> ValueError: NumericProperty accept only int/float</span>
+</pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.4.1: </span>NumericProperty can now accept custom text and tuple value to indicate a
+type, like “in”, “pt”, “px”, “cm”, “mm”, in the format: ‘10pt’ or (10,
+‘pt’).</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_node_size">
+<code class="sig-name descname">cluster_node_size</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_node_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>NumericProperty(defaultvalue=0, <a href="#id19"><span class="problematic" id="id20">**</span></a>kw)
+Property that represents a numeric value.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>defaultvalue</cite>: int or float, defaults to 0</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span> <span class="o">=</span> <span class="n">Widget</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">wid</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="go">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;plop&quot;</span>
+<span class="go"> Traceback (most recent call last):</span>
+<span class="go">   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 93, in kivy.properties.Property.__set__</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 111, in kivy.properties.Property.set</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 159, in kivy.properties.NumericProperty.check</span>
+<span class="go"> ValueError: NumericProperty accept only int/float</span>
+</pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.4.1: </span>NumericProperty can now accept custom text and tuple value to indicate a
+type, like “in”, “pt”, “px”, “cm”, “mm”, in the format: ‘10pt’ or (10,
+‘pt’).</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_radius">
+<code class="sig-name descname">cluster_radius</code><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.cluster_radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>NumericProperty(defaultvalue=0, <a href="#id21"><span class="problematic" id="id22">**</span></a>kw)
+Property that represents a numeric value.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>defaultvalue</cite>: int or float, defaults to 0</dt><dd><p>Specifies the default value of the property.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span> <span class="o">=</span> <span class="n">Widget</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">wid</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="go">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wid</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;plop&quot;</span>
+<span class="go"> Traceback (most recent call last):</span>
+<span class="go">   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 93, in kivy.properties.Property.__set__</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 111, in kivy.properties.Property.set</span>
+<span class="go">   File &quot;properties.pyx&quot;, line 159, in kivy.properties.NumericProperty.check</span>
+<span class="go"> ValueError: NumericProperty accept only int/float</span>
+</pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.4.1: </span>NumericProperty can now accept custom text and tuple value to indicate a
+type, like “in”, “pt”, “px”, “cm”, “mm”, in the format: ‘10pt’ or (10,
+‘pt’).</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.create_widget_for">
+<code class="sig-name descname">create_widget_for</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.create_widget_for" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.remove_marker">
+<code class="sig-name descname">remove_marker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">marker</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.remove_marker" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.reposition">
+<code class="sig-name descname">reposition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.reposition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function called when <code class="xref py py-class docutils literal notranslate"><span class="pre">MapView</span></code> is moved. You must recalculate
+the position of your children.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.set_marker_position">
+<code class="sig-name descname">set_marker_position</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mapview</span></em>, <em class="sig-param"><span class="n">marker</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.ClusteredMarkerLayer.set_marker_position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.KDBush">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">KDBush</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em>, <em class="sig-param"><span class="n">node_size</span><span class="o">=</span><span class="default_value">64</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.KDBush" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>kdbush implementation from:
+<a class="reference external" href="https://github.com/mourner/kdbush/blob/master/src/kdbush.js">https://github.com/mourner/kdbush/blob/master/src/kdbush.js</a></p>
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.KDBush.range">
+<code class="sig-name descname">range</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">min_x</span></em>, <em class="sig-param"><span class="n">min_y</span></em>, <em class="sig-param"><span class="n">max_x</span></em>, <em class="sig-param"><span class="n">max_y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.KDBush.range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.KDBush.within">
+<code class="sig-name descname">within</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">r</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.KDBush.within" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.Marker">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">Marker</code><span class="sig-paren">(</span><em class="sig-param">lon</em>, <em class="sig-param">lat</em>, <em class="sig-param">cls=&lt;class 'kivy_garden.mapview.view.MapMarker'&gt;</em>, <em class="sig-param">options=None</em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.Marker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.SuperCluster">
+<em class="property">class </em><code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">SuperCluster</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">min_zoom</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_zoom</span><span class="o">=</span><span class="default_value">16</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">40</span></em>, <em class="sig-param"><span class="n">extent</span><span class="o">=</span><span class="default_value">512</span></em>, <em class="sig-param"><span class="n">node_size</span><span class="o">=</span><span class="default_value">64</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.SuperCluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Port of supercluster from mapbox in pure python</p>
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.SuperCluster.get_clusters">
+<code class="sig-name descname">get_clusters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bbox</span></em>, <em class="sig-param"><span class="n">zoom</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.SuperCluster.get_clusters" title="Permalink to this definition">¶</a></dt>
+<dd><p>For the given bbox [westLng, southLat, eastLng, northLat], and
+integer zoom, returns an array of clusters and markers</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.SuperCluster.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.SuperCluster.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load an array of markers.
+Once loaded, the index is immutable.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.latY">
+<code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">latY</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lat</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.latY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.lngX">
+<code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">lngX</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lng</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.lngX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.xLng">
+<code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">xLng</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.xLng" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="frontend.mapViewOverride.clustered_marker_layer.yLat">
+<code class="sig-prename descclassname">frontend.mapViewOverride.clustered_marker_layer.</code><code class="sig-name descname">yLat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.mapViewOverride.clustered_marker_layer.yLat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+<section id="module-frontend.mapViewOverride">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-frontend.mapViewOverride" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="restAPIConnection.html" class="btn btn-neutral float-right" title="restAPIConnection package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="frontend.components.map.html" class="btn btn-neutral float-left" title="frontend.components.map package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Songyi Han, Ben Murphy, Florian Rüegsegger.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

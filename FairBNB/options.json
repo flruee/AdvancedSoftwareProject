@@ -1,0 +1,4 @@
+{
+    "rest_api_url": "http://localhost:8888",
+    "listing_limit": 10000
+}

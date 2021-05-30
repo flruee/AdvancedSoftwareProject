@@ -1,6 +1,6 @@
 #splits the large dump file into smaller ones 
 
-lines_per_file = 200000
+lines_per_file = 50000
 smallfile = None
 with open('pg_dump.sql',encoding="utf8") as bigfile:
     for lineno, line in enumerate(bigfile):

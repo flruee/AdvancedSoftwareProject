@@ -1,0 +1,103 @@
+#:include frontend/airbnbmapview.kv
+#:include frontend/components/filtering/filterMenu.kv
+#:include frontend/components/form/form.kv
+#:include frontend/components/compare/compareScreen.kv
+#import MDIconButton kivymd.uix.button.MDIconButton
+#import MDFlatButton kivymd.uix.button.MDFlatButton
+#import MDRaisedButton kivymd.uix.button.MDRaisedButton
+#import MDRectangleFlatIconButton kivymd.uix.button.MDRectangleFlatIconButton
+#import MDTextField kivymd.textfields.MDTextField
+
+Screen:
+    MDToolbar:
+        id: toolbar
+        pos_hint: {"top": 1}
+        elevation: 10
+        title: "FairBnb"
+        left_action_items: [["menu", lambda x: nav_drawer.set_state("open")]]
+
+    MDNavigationLayout:
+        x: toolbar.height
+        size_hint_y: 1.0 - toolbar.height/root.height
+
+        ScreenManager:
+            id: screen_manager
+
+            Screen:
+                name: "formscreen"
+                Form:
+                    id: form
+
+            Screen:
+                name: "mapscreen"
+                on_pre_enter: mapview.get_airbnb_in_fov("on_enter")
+                MDBoxLayout:
+                    id: mapbox
+                    orientation: 'horizontal'
+
+                    AirbnbMapView:
+                        id: mapview
+
+
+
+            Screen:
+                name: 'comparescreen'
+                on_pre_enter: compareScreen.load_bookmarked()
+                on_leave: compareScreen.remove_wishlist_superboxes()
+                CompareScreen:
+                    id: compareScreen
+
+        MDNavigationDrawer:
+            id: nav_drawer
+
+            ContentNavigationDrawer:
+                screen_manager: screen_manager
+                nav_drawer: nav_drawer
+
+        MDNavigationDrawer:
+            enable_swiping: False
+            id: filter_drawer
+            FilterMenu:
+                id: filter_menu
+
+<ContentNavigationDrawer>:
+
+    ScrollView:
+
+        MDList:
+
+            OneLineIconListItem:
+                text: "Form"
+                on_press:
+                    root.nav_drawer.set_state("close")
+                    root.screen_manager.current = "formscreen"
+                IconLeftWidget:
+                    icon: "file-question-outline"
+
+            OneLineIconListItem:
+                text: "Map"
+                on_press:
+                    root.nav_drawer.set_state("close")
+                    root.screen_manager.current = "mapscreen"
+                IconLeftWidget:
+                    icon: "map-outline"
+
+            OneLineIconListItem:
+                text: "Wishlist"
+                on_press:
+                    root.nav_drawer.set_state("close")
+                    root.screen_manager.current = "comparescreen"
+                IconLeftWidget:
+                    icon: "heart-outline"
+
+<ContentFilterDrawer>:
+    ScrollView:
+
+        MDList:
+            RangeSlider:
+                id:"price_slider"
+
+
+
+
+

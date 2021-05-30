@@ -1,39 +1,106 @@
+dist: focal
 jobs:
-  include:
-    - language: python
-      python: 3.7
-      before_script:
-        - cd Frontend
-        - pip install -r requirements.txt
-      script:
-        - cd src/unittest/python
-        - pytest test_test.py
-        
-    - language: node_js
-      node_js: 13 
+  include:      
+    - stage: Build rest api docker image
+      language: python
+      services: 
+        - docker
       addons:
-         postgresql: 12
-         apt: 
-           packages:
-             - postgresql-12
-             - postgresql-client-12
+        postgresql: 12
+        apt: 
+         packages:
+           - postgresql-12
+           - postgresql-client-12
+      env:
+        - DOCKER_COMPOSE_VERSION=1.29.1
+      before_install:
+        - sudo rm /usr/local/bin/docker-compose
+        - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+        - chmod +x docker-compose
+        - sudo mv docker-compose /usr/local/bin
+      install:
+        - nvm install node
+        - nvm use node
       before_script:
+        - cd rest_api
+        - npm install
+        - cd db
+        - python assembleDump.py
+        - cd ..
+      script:
+        - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+        - docker-compose build
+        - docker-compose images
+        - docker-compose push
+    - stage: Build FairBNB docker image
+      language: python
+      services: 
+        - docker
+      env:
+        - DOCKER_COMPOSE_VERSION=1.29.1
+      before_install:
+        - sudo rm /usr/local/bin/docker-compose
+        - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+        - chmod +x docker-compose
+        - sudo mv docker-compose /usr/local/bin
+      before_script:
+        - cd FairBNB
+      script:
+        - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+        - docker-compose build
+        - docker-compose images
+        - docker-compose push
+    - stage: test  
+      language: python
+      node_js: 3.7 
+      addons:
+        sonarcloud:
+          organization: "flruee" 
+        postgresql: 12
+        apt: 
+         packages:
+           - postgresql-12
+           - postgresql-client-12
+      install:
+        - nvm install node
+        - nvm use node
+      before_script:
+        - pip install -r FairBNB/requirements.txt
         - cd rest_api
         - psql -c 'CREATE TABLE host (host_id integer NOT NULL,host_location text COLLATE pg_catalog."default",host_is_superhost character varying(1) COLLATE pg_catalog."default",host_neighbourhood text COLLATE pg_catalog."default",host_listings_count integer,host_total_listings_count integer,host_identity_verified character varying(1) COLLATE pg_catalog."default",calculated_host_listings_count integer,calculated_host_listings_count_entire_homes integer,calculated_host_listings_count_private_rooms integer,calculated_host_listings_count_shared_rooms integer,CONSTRAINT host_pkey PRIMARY KEY (host_id));'
         - psql -c "INSERT INTO host VALUES(1,'New York, New York, United States','f','Gravesend',6,6,'t',6,0,5,1);"
         - psql -c 'CREATE TABLE listing_detail(id integer NOT NULL,thumbnail_url character varying(100) COLLATE pg_catalog."default",medium_url character varying(100) COLLATE pg_catalog."default",picture_url character varying(100) COLLATE pg_catalog."default",xl_picture_url character varying(100) COLLATE pg_catalog."default",name character varying(200) COLLATE pg_catalog."default",listing_url character varying(100) COLLATE pg_catalog."default",price integer,summary text COLLATE pg_catalog."default",space text COLLATE pg_catalog."default",description text COLLATE pg_catalog."default",neighborhood_overview text COLLATE pg_catalog."default",transit text COLLATE pg_catalog."default",access text COLLATE pg_catalog."default",host_id integer,guests_included integer,number_of_reviews integer,CONSTRAINT listing_detail_pkey PRIMARY KEY (id));'
         - psql -c "INSERT INTO listing_detail VALUES(1,'','','https://a0.muscache.com/im/pictures/f3a49248-b3e6-4b54-8030-7fb580f0688e.jpg?aki_policy=large','','Magnifique Suite au N de Manhattan - vue Cloitres','https://www.airbnb.com/rooms/8700',80,'Suite de 20 m2 a 5 min des 2 lignes de metro au Nord de Manhattan. Bars, restaurants et un marche bio animent le quartier. Magnifique vue sur les Cloitres medievaux et inonde de lumiere. Parfait pour une escapade a New-York!','', 'Suite de 20 m2 a 5 min des 2 lignes de metro au Nord de Manhattan. Bars, restaurants et un marche bio animent le quartier. Magnifique vue sur les Cloitres medievaux et inonde de lumiere. Parfait pour une escapade a New-York! Metro 1 et A', '', 'Metro 1 et A','',26394,	1,0);"
-        - psql -c "CREATE TABLE listing_location(id integer NOT NULL,latitude numeric,longitude numeric,CONSTRAINT listing_location_pkey PRIMARY KEY (id));"
-        - psql -c 'INSERT INTO listing_location VALUES(1,40.647490000000005,-73.97237);'
+        - psql -c "CREATE TABLE listing_location(id integer primary key,latitude decimal,longitude decimal,price integer,borough varchar(13),village varchar(26),total_listings_count integer,is_superhost boolean,guests_included integer,review_score decimal);"
+        - psql -c "INSERT INTO listing_location VALUES(1,40.85311,-73.88763,29,'Bronx','Belmont',1,false,1,93.0);"
+        - psql -c "INSERT INTO listing_location VALUES(2,40.75961,-73.91117,80,'Queens','Astoria',2,true,2,97.0);" -U travis
         - psql -c 'CREATE TABLE listing_other(id integer NOT NULL,square_feet integer,property_type character varying(50) COLLATE pg_catalog."default",room_type character varying(50) COLLATE pg_catalog."default",neighbourhood_cleansed character varying(50) COLLATE pg_catalog."default",neighbourhood_group_cleansed character varying(50) COLLATE pg_catalog."default",minimum_nights integer,maximum_nights integer,CONSTRAINT listing_other_pkey PRIMARY KEY (id));'
         - psql -c "INSERT INTO listing_other VALUES(1,0,'Apartment','Private room','Kensington','Brooklyn',1,730);"
         - psql -c 'CREATE TABLE listing_reviews(id integer NOT NULL,review_scores_rating numeric,review_scores_accuracy numeric,review_scores_cleanliness numeric,review_scores_checkin numeric,review_scores_communication numeric,review_scores_location numeric,review_scores_value numeric,CONSTRAINT listing_reviews_pkey PRIMARY KEY (id));'
         - psql -c "INSERT INTO listing_reviews VALUES(1,98.0,10.0,10.0,10.0,10.0,10.0,10.0);"
         - psql -c 'CREATE TABLE review (listing_id integer, id integer primary key, date date, reviewer_id integer, reviewer_name varchar(100), comments text);' -U travis
         - psql -c "INSERT INTO review VALUES(1,1,'2016-08-27', 91513326, 'Liz','Nice room for the price. Great neighborhood. John was very accommodating. Bottles of water in the room were a nice touch and very much appreciated.');" -U travis
+        - psql -c "CREATE TABLE village_category(village varchar(26), age varchar(10),interest varchar(11), primary key(village,age,interest));" -U travis
+        - psql -c "INSERT INTO village_category VALUES('Astoria','18-30','Food');" -U travis
+        - psql -c "Insert INTO village_category VALUES('Belmont','30-50','Food');" -U travis
+        - psql -c "Insert INTO village_category VALUES('Belmont','30-40','Nightlife');" -U travis
+        - psql -c "Insert INTO village_category VALUES('Harlem','18-30','Art & Music');" -U travis
+
+
         - psql -c "alter user travis with password 'travispassword'" -U travis
         - npm install
       env:
         - PORT=8888 DB_HOST=localhost DB_PORT=5433 DB_NAME='travis' DB_USER=travis PGPORT=5433 PGUSER=travis DB_PASSWORD=travispassword
       script:
-        npm test     
+        - npm test
+        - nohup npm start &
+        - sleep 3
+        - cd ../FairBNB
+        - python main.py test
+        - cd ..
+        - sonar-scanner
+
+
+
+
+

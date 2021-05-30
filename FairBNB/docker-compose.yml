@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    #image: my-app:latest
+    build: .
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=${XAUTHORITY}
+    image: moerfi/fairbnb:FairBNB
+
+    network_mode: host

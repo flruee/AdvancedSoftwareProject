@@ -1,0 +1,257 @@
+<Form>:
+    id: form
+    BoxLayout:
+        padding: dp(200)
+        spacing: dp(80)
+        canvas:
+            Rectangle:
+                size: self.size
+                source: "frontend/icons/bg_map.png"
+        MDCard:
+        	pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 40
+            border_radius: 15
+            radius: [15]
+            size_hint: None, None
+            size: 500, 520
+            padding: "30dp", "30dp"
+
+            BoxLayout:
+                id:baax
+                orientation: 'vertical'
+                padding: "40dp", "30dp", "0dp", "0dp"
+                spacing: dp(50)
+                size: 520, 480
+                size_hint: None, None
+                pos_hint: {"center_x": 0, "center_y": 0.55}
+                
+                BoxLayout:
+                	padding: "20dp", 0
+                    spacing: dp(40)
+                    size_hint: None, None
+                    size: 450, 15
+                    MDTextField:
+                        id: field_n
+                        size_hint: None, None
+                        pos_hint: {"center_y": 0.5}
+                        width: "180dp"
+                        hint_text: "Neighborhood"
+                        mode: "rectangle"
+                        line_color_normal: app.theme_cls.primary_color
+                        icon_right: "arrow-down-drop-circle-outline"
+                        on_focus:
+                            if self.focus:form.menu_n.open()
+
+                    MDTextField:
+                    	id: field_g
+                    	size_hint: None, None
+                    	width: "110dp"
+                    	pos_hint: {"center_y": 0.5}
+                    	hint_text: "Guests"
+                    	helper_text: "you can enter 1 to 16"
+                    	helper_text_mode: "on_error"
+                    	on_focus: form.set_error_message(self)
+                   
+                BoxLayout:
+                    spacing: dp(40)
+                    size_hint: None, None
+                    size: 450, 40
+                    padding: "20dp", "10dp"
+                    MDTextField:
+                        id: field_a
+                        size_hint: None, None
+                        width: "85dp"
+                        pos_hint: {"center_y": 1}
+                        hint_text: "Age"
+                        mode: "rectangle"
+                        line_color_normal: app.theme_cls.accent_color
+                        icon_right: "arrow-down-drop-circle-outline"
+                        icon_right_color: app.theme_cls.primary_color
+                        on_focus:
+                            if self.focus: form.menu_a.open()
+                   
+                    BoxLayout:
+                        spacing: "10dp"
+                        pos_hint: {"center_y": 1}
+                        BoxLayout:
+                            orientation: 'vertical'
+                            size_hint: None, None
+                            pos_hint: {"center_y": 0}
+                            size: 70, 50
+                            MDLabel:
+                                text: "High rating"
+                                font_style: 'Caption'
+                                bold: True
+                            MDCheckbox:
+                                size_hint: None, None
+                                size: dp(40), dp(40)
+                                pos_hint: {"center_x": 0.45, "center_y": 0.2}
+                                on_active:
+                                    form.set_highrating(self.active)
+                        BoxLayout:
+                            orientation: 'vertical'
+                            size_hint: None, None
+                            pos_hint: {"center_y": 0}
+                            size: 70, 50
+                            MDLabel:
+                                text: "Super host"
+                                font_style: 'Caption'
+                                bold: True
+                            MDCheckbox:
+                                size_hint: None, None
+                                size: dp(40), dp(40)
+                                pos_hint: {"center_x": 0.45, "center_y": 0.2}
+                                on_active:
+                                    form.set_superhost(self.active)
+                        BoxLayout:
+                            orientation: 'vertical'
+                            size_hint: None, None
+                            pos_hint: {"center_x":1, "center_y": 0}
+                            padding: dp(0)
+                            spacing: dp(0)
+                            size: 70, 50
+                            MDLabel:
+                                text: "Fair filter"
+                                font_style: 'Caption'
+                                bold: True
+                            MDCheckbox:
+                                size_hint: None, None
+                                size: dp(40), dp(40)
+                                pos_hint: {"center_x": 0.35, "center_y": 0}
+                                on_active:
+                                    form.set_fairfilter(self.active)
+
+                BoxLayout:
+                	orientation: 'vertical'
+                	spacing: "35dp"
+                	size_hint: None, None
+                	size: 400, 50
+
+                	MDLabel:
+                		pos_hint: {"center_y": 1}
+                		text: "Interests"
+                		bold: True
+                	BoxLayout:
+                		padding: "10dp", "5dp"
+                		spacing: "10dp"
+                		MDChip:
+                			pos_hint: {"center_y": 1}
+        					text: 'Shopping'
+        					icon: 'shopping'
+        					color: 0,0,0,0.1
+        					#selected_chip_color: app.them_cls.primary_color
+        					on_release: form.set_interest(self)
+        				MDChip:
+        					pos_hint: {"center_y": 1}
+        					text: 'Food'
+        					icon: 'food'
+        					color: 0,0,0,0.1
+        					on_release: form.set_interest(self)
+        					
+        				MDChip:
+        					pos_hint: {"center_y": 1}
+        					text: 'Sightseeing'
+        					icon: 'map'
+        					color: 0,0,0,0.1
+        					on_release: form.set_interest(self)
+        			BoxLayout:
+                		padding: "10dp", "5dp"
+                		spacing: "10dp"
+                		MDChip:
+                			pos_hint: {"center_y": 1}
+        					text: 'Art & Music'
+        					icon: 'draw'
+        					color: 0,0,0,0.1
+        					on_release: form.set_interest(self)
+        				MDChip:
+        					pos_hint: {"center_y": 1}
+        					text: 'Nightlife'
+        					icon: 'glass-wine'
+        					color: 0,0,0,0.1
+        					on_release: form.set_interest(self)
+
+        		BoxLayout:
+        			size_hint: None, None
+                    size: 450, 100
+                    BoxLayout: 
+                    	orientation: 'vertical'
+                    	spacing: '15dp'
+        				MDLabel:
+        					pos_hint: {"center_y": 1}
+                			text: "Price"
+                			bold: True
+                		RangeSlider:
+            				id: price_filter
+            				size_hint: None, None
+            				size: 320, 20
+            				pos_hint: {"center_x": 0.4, "center_y": 1}
+            				value: 0,1000
+            				min:0
+            				max:1000
+
+            			BoxLayout:
+                            size_hint: None, None
+
+                            size: 500, 50               
+                            BoxLayout:
+                                orientation: 'vertical'
+            				    MDLabel:
+                                    pos_hint: {"center_x": 0.6}   
+            				        text: 'Minimum $'
+            				        font_style: 'Caption'
+                                MDTextFieldRect:
+                                    id: min_p
+                                    pos_hint: {"center_x": 0.25}
+                                    size_hint: None, None
+                                    size: 80, 30
+                                    multiline:False
+                                    text: '{}'.format(int(price_filter.value[0]))
+                                    on_focus: form.set_price()
+
+                            BoxLayout:
+                                orientation: 'vertical'
+            				    MDLabel:
+                                    pos_hint: {"center_x": 0.55}   
+            				        text: 'Maximum $'
+            				        font_style: 'Caption'
+                                MDTextFieldRect:
+                                    id: max_p
+                                    pos_hint: {"center_x": 0.2}
+                                    multiline: False
+                                    size_hint: None, None
+                                    size: 80, 30
+                                    text: '{}'.format(int(price_filter.value[1]))
+                                    background_color: [1,1,1,1]
+                                    on_focus: form.set_price()
+
+                BoxLayout:
+                	size_hint: None, None
+                    size: 450, 20
+                    pos_hint: {"center_x": 0.7, "center_y": 1}
+                    padding: dp(10)
+                    MDFillRoundFlatIconButton:
+                        pos_hint: {"center_y": 0}
+                        md_bg_color: 1, 0, 0, 0.7
+                        size_hint: None, None
+                        size: 100, 30
+                        icon: 'magnify'
+                        text: "Search"
+                        font_style: 'Button'
+                        on_release: form.switch_to_mapscreen()
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: None, None
+            size: 300, 100
+            pos_hint: {"center_y": 0.8}
+            spacing: dp(30)
+            MDLabel:
+                text: "FairBnB"
+                color: app.theme_cls.primary_color
+                font_style: 'H3'
+                bold: True
+            MDLabel:
+                text: "A new way of finding your best neighborhood."
+                font_style: 'H5'
+                color: app.theme_cls.primary_color
+                bold: True

@@ -1,0 +1,36 @@
+
+<FilterMenu>:
+    BoxLayout:
+        orientation: 'vertical'
+        MDLabel:
+            text: 'Price'
+            opposite_color: True
+        RangeSlider:
+            id: price_filter
+            value: 0,9999
+            min:0
+            max:9999
+
+        BoxLayout:
+            MDLabel:
+                text: 'Minimum Price: {}'.format(int(price_filter.value[0]))
+            MDLabel:
+                text: 'Maximum Price {}'.format(int(price_filter.value[1]))
+
+
+        MDLabel:
+            text: 'Age'
+        RangeSlider:
+            id: age_filter
+            value: 0,99
+        BoxLayout:
+            MDLabel:
+                text: 'Minimum Age: {}'.format(int(age_filter.value[0]))
+            MDLabel:
+                text: 'Maximum Age: {}'.format(int(age_filter.value[1]))
+
+
+        ApplyFilterButton:
+            id: apply_filters
+        ResetFilterButton:
+            id: reset_filters
