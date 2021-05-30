@@ -5,11 +5,11 @@ import io
 import numpy as np
 
 
-USER="postgres"
-HOST="localhost"
-PORT= '5433'
-DB_NAME="ase"
-PASSWORD="turmturm"
+USER=""
+HOST=""
+PORT= ""
+DB_NAME=""
+PASSWORD=""
 engine = create_engine(f"postgresql+psycopg2://{USER}:{PASSWORD}@{HOST}:{PORT}/{DB_NAME}")
 
 
@@ -322,8 +322,9 @@ def addNeighborhood():
 if __name__=="__main__":
     
     createTables()
-    #addListingsAndHost("data/listings.csv")
-    #addReviews("data/reviews.csv")
+    addListingsAndHost("data/listings.csv")
+    #reviews are not needed
+    #addReviews("data/reviews.csv") 
     addNeighborhood()
 
 
