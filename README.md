@@ -1,5 +1,5 @@
 # AdvancedSoftwareProject
-[![Build Status](https://travis-ci.com/flruee/AdvancedSoftwareProject.svg?token=fp5ppBj9DyWPBuhMzGBq&branch=Development)](https://travis-ci.com/flruee/AdvancedSoftwareProject)
+[![Build Status](https://travis-ci.com/flruee/AdvancedSoftwareProject.svg?token=fp5ppBj9DyWPBuhMzGBq&branch=Development)](https://travis-ci.com/moerfii/AdvancedSoftwareProject-1)
 
 This is the FairBNB project.
 
